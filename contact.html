@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nice Vision in Carrollton, TX. Send an inquiry, request custom frame styling, or visit our optical store on Oxfordshire Dr. 20+ Years Legacy.">
+  <meta name="keywords" content="Contact Nice Vision, Carrollton TX Optician, Frame Styling, Prescription Lenses, Eyewear Store Location, Phone 972-395-8080">
+  <title>Contact Us & Store Location | Nice Vision Carrollton, TX</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=1.6">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVBAR ================= -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark brand-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Nice Vision Home">
+          <img src="assets/niceVision_logo.png" alt="Nice Vision Logo" class="brand-logo-img">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a href="tel:9723958080" class="btn btn-call-cta d-inline-flex align-items-center gap-2 shadow-sm">
+              <i class="bi bi-telephone-fill"></i>
+              <span>Call Now: (972) 395-8080</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= COMING SOON SECTION ================= -->
+    <section class="py-5 d-flex align-items-center justify-content-center" style="min-height: 72vh; background: linear-gradient(135deg, #ffffff 0%, #f4f8fc 100%);">
+      <div class="container py-lg-5 text-center">
+        <h1 class="hero-title fw-extrabold mb-0">
+          Coming <span class="text-gradient">Soon</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT PAGE CONTENT (Commented out full as requested) =================
+    <section class="page-header-section text-center">
+      <div class="container py-3">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-yellow-subtle text-navy border border-warning fw-semibold mb-3 small">
+          <i class="bi bi-geo-alt-fill text-warning"></i>
+          <span>Carrollton, TX Optical Store • Walk-Ins Always Welcome</span>
+        </div>
+        <h1 class="page-header-title display-5 fw-extrabold mb-3">Get in Touch & Visit Us</h1>
+        <p class="text-light-muted max-w-700 mx-auto mb-0 lead fs-6">
+          Have questions about your prescription, frame fittings, or special discounts? Send us a message or visit our store in Carrollton today.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section py-5">
+      <div class="container py-lg-3">
+        
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 border d-flex flex-column justify-content-between">
+              
+              <div>
+                <span class="badge bg-sky-subtle text-accent-sky px-3 py-1 rounded-pill fw-semibold mb-2">Direct Inquiry</span>
+                <h2 class="h3 fw-bold text-navy mb-2">Send Us a Message</h2>
+                <p class="text-muted small mb-4">
+                  Fill in your details below and our team will get back to you promptly.
+                </p>
+
+                <div id="formSuccessAlert" class="alert alert-success d-none mb-4" role="alert">
+                  <i class="bi bi-check-circle-fill me-2"></i>
+                  <strong>Thank you!</strong> Your message has been received. Our optical team will be in touch shortly.
+                </div>
+
+                <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label fw-semibold text-navy small">Your Full Name <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-person"></i></span>
+                      <input type="text" class="form-control border-start-0 ps-0" id="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="invalid-feedback">Please provide your name.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="emailAddress" class="form-label fw-semibold text-navy small">Email Address <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-envelope"></i></span>
+                      <input type="email" class="form-control border-start-0 ps-0" id="emailAddress" placeholder="name@example.com" required>
+                    </div>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label fw-semibold text-navy small">Phone Number (Optional)</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-telephone"></i></span>
+                      <input type="tel" class="form-control border-start-0 ps-0" id="phoneNumber" placeholder="(972) 000-0000">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="serviceInterest" class="form-label fw-semibold text-navy small">Service / Product of Interest</label>
+                    <select class="form-select" id="serviceInterest">
+                      <option value="General Inquiry" selected>General Inquiry</option>
+                      <option value="Free Frames with Lenses Offer">Free Frames with Lenses Offer</option>
+                      <option value="10% Off Above $200 Offer">10% Off Orders Above $200</option>
+                      <option value="Single Vision Glasses">Single Vision Glasses ($70+)</option>
+                      <option value="Progressive / No-Line Bifocals">Progressive / No-Line Bifocals ($105+)</option>
+                      <option value="Bifocal Glasses">Bifocal Glasses ($85+)</option>
+                      <option value="Kids Eyewear">Kids Eyewear ($65+)</option>
+                      <option value="Custom Frame Fitting">Custom Frame Fitting</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="messageContent" class="form-label fw-semibold text-navy small">Your Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="messageContent" rows="4" placeholder="How can our optical team help you today?" required></textarea>
+                    <div class="invalid-feedback">Please enter your message or question.</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2" id="submitBtn">
+                    <span>Send Message</span>
+                    <i class="bi bi-send-fill ms-1"></i>
+                  </button>
+                </form>
+              </div>
+
+              <div class="pt-4 border-top mt-4">
+                <div class="d-flex align-items-center gap-2 text-muted small">
+                  <i class="bi bi-shield-lock-fill text-accent-sky"></i>
+                  <span>Your privacy is fully protected. We will never share your contact information.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 border d-flex flex-column justify-content-between">
+              
+              <div>
+                <span class="badge bg-yellow-subtle text-navy border border-warning px-3 py-1 rounded-pill fw-semibold mb-2">
+                  <i class="bi bi-geo-alt-fill text-warning me-1"></i> Carrollton, TX Store
+                </span>
+                <h2 class="h3 fw-bold text-navy mb-2">Visit Our Store</h2>
+                <p class="text-muted small mb-4">
+                  Come try on frames in person. Our opticians are ready to adjust, fit, and help you find the perfect eyewear.
+                </p>
+
+                <div class="contact-details-box mb-4">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="contact-icon bg-sky-subtle text-accent-sky rounded-circle flex-shrink-0">
+                      <i class="bi bi-geo-alt-fill fs-5"></i>
+                    </div>
+                    <div>
+                      <span class="fw-bold text-navy d-block">Physical Address</span>
+                      <address class="text-muted mb-0 small not-italic">
+                        <strong>Nice Vision Optical</strong><br>
+                        1001 Oxfordshire Dr,<br>
+                        Carrollton, TX 75007
+                      </address>
+                      <a href="https://maps.google.com/?q=1001+Oxfordshire+Dr,+Carrollton,+TX+75007" target="_blank" rel="noopener noreferrer" class="btn btn-link text-accent-sky p-0 small fw-semibold text-decoration-none mt-1 d-inline-block">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Open in Google Maps
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="contact-icon bg-yellow-subtle text-accent-yellow rounded-circle flex-shrink-0">
+                      <i class="bi bi-telephone-fill fs-5"></i>
+                    </div>
+                    <div>
+                      <span class="fw-bold text-navy d-block">Phone Support</span>
+                      <a href="tel:9723958080" class="text-decoration-none fw-bold text-accent-sky fs-6">
+                        (972) 395-8080
+                      </a>
+                      <span class="d-block extra-small text-muted">Direct optical store line</span>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="contact-icon bg-sky-subtle text-accent-sky rounded-circle flex-shrink-0">
+                      <i class="bi bi-clock-fill fs-5"></i>
+                    </div>
+                    <div>
+                      <span class="fw-bold text-navy d-block">Operating Hours</span>
+                      <span class="text-muted small">Monday - Saturday: <strong>9:30 AM - 6:00 PM</strong></span>
+                      <span class="d-block text-muted small">Sunday: Closed</span>
+                      <span class="d-block extra-small text-success fw-semibold mt-1"><i class="bi bi-check-circle-fill me-1"></i>Walk-Ins Always Welcome</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-3 bg-light-section border mb-4">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span class="fw-bold text-navy small">20-Year Optical Legacy</span>
+                  </div>
+                  <p class="extra-small text-muted mb-0">
+                    Trusted Carrollton optical boutique providing precision measurements, custom lens fabrication, and friendly hometown service.
+                  </p>
+                </div>
+              </div>
+
+              <div class="map-wrapper rounded-4 overflow-hidden border shadow-inner" style="min-height: 240px;">
+                <iframe 
+                  title="Nice Vision Carrollton Store Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.9221588698144!2d-96.9069356!3d33.0058145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2438cb4499d1%3A0x6b772c916ec6fba0!2s1001%20Oxfordshire%20Dr%2C%20Carrollton%2C%20TX%2075007!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                  width="100%" 
+                  height="240" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-5 bg-light-section border-top">
+      <div class="container py-lg-3">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-subtitle text-uppercase fw-semibold tracking-wider text-accent-sky mb-2 d-inline-block">
+            Common Questions
+          </span>
+          <h2 class="section-title text-navy fw-bold mb-3">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-secondary-contrast">
+            Find quick answers regarding our lenses, frames, and in-store policies.
+          </p>
+        </div>
+
+        <div class="accordion max-w-800 mx-auto shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button fw-bold text-navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Do I need an appointment, or can I walk in?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary small">
+                Walk-ins are always welcome! You can stop by anytime during our store hours (Mon - Sat: 9:30 AM - 6:00 PM) to explore frames, get customized lens measurements, or have your glasses adjusted.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed fw-bold text-navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How do your special offers work?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary small">
+                When you purchase select prescription lens packages, you can choose a frame from our designated collection for free. In addition, any total purchase of $200 USD or more automatically receives an instant 10% discount!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer bg-navy text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary-subtle">
+        
+        <!-- Brand Summary -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <img src="assets/niceVision_logo.png" alt="Nice Vision Logo" class="footer-logo-img">
+          </div>
+          <p class="text-light-muted small mb-3">
+            <em>"Frames That Fit Your World."</em> With a <strong>20-year legacy</strong> of optical expertise, we provide the Carrollton and DFW community with high-grade prescription optical lenses, designer frames, and approachable, caring service.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-btn" aria-label="Nice Vision on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Nice Vision on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Nice Vision on Yelp"><i class="bi bi-yelp"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Nice Vision on Google Business"><i class="bi bi-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="h6 fw-bold text-white mb-3 text-uppercase tracking-wider">Quick Links</h4>
+          <ul class="list-unstyled footer-links small d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Product Catalog</a></li>
+            <li><a href="contact.html">Contact & Map</a></li>
+            <li><a href="contact.html">Custom Frame Fitting</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="h6 fw-bold text-white mb-3 text-uppercase tracking-wider">Eyewear Types</h4>
+          <ul class="list-unstyled footer-links small d-flex flex-column gap-2 mb-0">
+            <li><a href="products.html">Single Vision ($70)</a></li>
+            <li><a href="products.html">No-Line Bifocals ($105)</a></li>
+            <li><a href="products.html">Classic Bifocals ($85)</a></li>
+            <li><a href="products.html">Kids Tough Frames ($65)</a></li>
+            <li><a href="products.html">Anti-Glare Coatings</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="h6 fw-bold text-white mb-3 text-uppercase tracking-wider">Store Info</h4>
+          <ul class="list-unstyled text-light-muted small d-flex flex-column gap-2 mb-0">
+            <li class="d-flex gap-2">
+              <i class="bi bi-geo-alt text-accent-yellow"></i>
+              <span>1001 Oxfordshire Dr, Carrollton, TX 75007</span>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-telephone text-accent-sky"></i>
+              <a href="tel:9723958080" class="text-white text-decoration-none">(972) 395-8080</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-clock text-accent-yellow"></i>
+              <span>Mon - Sat: 9:30 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Bar -->
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 small text-light-muted">
+        <div>
+          &copy; <span id="currentYear"></span> Nice Vision. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 mt-2 mt-sm-0">
+          <a href="#" class="text-light-muted text-decoration-none">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="text-light-muted text-decoration-none">Terms of Service</a>
+          <span>•</span>
+          <a href="#" class="text-light-muted text-decoration-none">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
