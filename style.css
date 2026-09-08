@@ -14,7 +14,8 @@
 
 :root {
   /* User-Specified Palette & Variables */
-  --color-bg-main: #F9E8D6;
+  /* --color-bg-main: #F9E8D6; */
+  --color-bg-main: #F3DDC7;
   --color-bg-subtle: #FAF0E4;
   --color-bg-card: #FFFFFF;
   
